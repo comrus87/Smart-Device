@@ -11,9 +11,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "PTMono-Regular", "Arial", sans-serif;
-  font-size: 54px;
-  line-height: 24px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 400;
 }
 
@@ -41,32 +41,32 @@ input[type="radio"].visually-hidden {
 }
 
 @font-face {
-  font-weight: normal;
-  font-family: "PTMono-Regular";
+  font-weight: 400;
+  font-family: "PT Mono";
   font-style: normal;
   font-display: swap;
   src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-weight: normal;
-  font-family: "Roboto-Medium";
+  font-weight: 400;
+  font-family: "Roboto";
   font-style: normal;
   font-display: swap;
   src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("fonts/Roboto-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-weight: normal;
-  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-display: swap;
   src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-weight: normal;
-  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-display: swap;
   src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");

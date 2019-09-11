@@ -1,0 +1,23 @@
+@mixin list-default {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin wrap-mobile {
+  max-width: 787px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@mixin wrap-tablet {
+  max-width: 1043px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@mixin wrap-desktop {
+  max-width: 1431px;
+  margin: 0 auto;
+  padding: 0 10px;
+}

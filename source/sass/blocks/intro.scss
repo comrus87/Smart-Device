@@ -1,0 +1,18 @@
+.intro {
+ margin: -124px auto 0;
+ background: red;
+ display: block;
+ padding: 316px 0 0 0;
+}
+
+.intro__wrap {
+  @include wrap-desktop;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+}
