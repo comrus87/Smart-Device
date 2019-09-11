@@ -1,8 +1,10 @@
 .intro {
- margin: -124px auto 0;
- background: red;
- display: block;
- padding: 316px 0 0 0;
+   margin: -124px auto 0;
+   background-color: #1d2e36;
+   background: url("../img/bg-picture-desktop.png") 1038px 258px no-repeat,
+               url("../img/bg-desktop.jpg") no-repeat;
+   display: block;
+   padding: 316px 0 278px 0;
 }
 
 .intro__wrap {
@@ -13,6 +15,70 @@
 }
 
 .intro__title {
+  padding: 0;
+  display: block;
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 31px 0;
+}
+
+.intro__desription {
   margin: 0;
   padding: 0;
+  width: 683px;
+  font-family: PT Mono;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #ffffff;
+  margin: 0 0 37px 98px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 66px;
+    height: 2px;
+    background: #ffffff;
+    left: -94px;
+    top: 16px;
+  }
+}
+
+.intro__button {
+  display: block;
+  border: none;
+  background: #00B2FF;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 407px;
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 17px 0 14px;
+  margin: 0 0 0 98px;
+}
+
+@media (max-width: $tablet-width) {
+
+  .intro {
+     background: url("../img/bg-picture-tablet.png") no-repeat,
+                 url("../img/bg-tablet.jpg") no-repeat;
+     padding: 188px 0 163px 0;
+  }
+
+
+
+
+
+
 }
