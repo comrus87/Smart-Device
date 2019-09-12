@@ -5,19 +5,19 @@
 }
 
 @mixin wrap-mobile {
-  max-width: 787px;
+  max-width: 767px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 @mixin wrap-tablet {
-  max-width: 1043px;
+  max-width: 1023px;
   margin: 0 auto;
   padding: 0 25px;
 }
 
 @mixin wrap-desktop {
-  max-width: 1431px;
+  max-width: 1480px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 35px;
 }
