@@ -1,0 +1,62 @@
+.about-company {
+  @include wrap-desktop;
+}
+
+.about-company__wrap {
+  padding: 75px 0 110px 300px;
+}
+
+.about-company__title {
+  font-family: Roboto Condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+  margin: 0 0 22px 0;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 220px;
+    height: 317px;
+    top: 5px;
+    left: -210px;
+    background-image: url("../img/year.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.about-company__text {
+  width: 984px;
+  font-family: PT Mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+  margin: 0 0 20px 0;
+}
+
+.about-company__button {
+  display: block;
+  width: 180px;
+  padding: 14px 0 16px 0;
+  background: transparent;
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $blue-color;
+  border: 1px solid $blue-color;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 38px;
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background: $blue-color;
+  }
+}
