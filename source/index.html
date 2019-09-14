@@ -122,6 +122,27 @@
           </ul>
         </div>
       </section>
+      <section class="block-form">
+        <div class="block-form__wrap">
+          <h2 class="block-form__title">Остались вопросы? Задайте их нам!</h2>
+          <p class="block-form__description">Мы проконсультируем Вас бесплатно</p>
+          <form class="block-form__form" method="post" action="#">
+
+            <input class="block-form__input block-form__name" type="text" placeholder="Имя" id="form-name" required>
+            <label class="visually-hidden" for="form-name"></label>
+
+            <input class="block-form__input block-form__phone" type="tel" placeholder="Телефон" id="form-phone" required>
+            <label class="visually-hidden" for="form-phone"></label>
+
+            <textarea class="block-form__textarea" id="form-textarea" placeholder="Ваш вопрос" required></textarea>
+
+            <button class="block-form__button" type="submit">Задать вопрос</button>
+
+            <input class="visually-hidden block-form__checkbox" type="checkbox" id="check-agree" name="agree" checked>
+            <label class="block-form__label-checkbox" for="check-agree">Я согласен на обработку персональных данных</label>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
