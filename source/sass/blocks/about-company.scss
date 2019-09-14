@@ -3,6 +3,8 @@
 }
 
 .about-company__wrap {
+  margin: 0 auto;
+  max-width: 1420px;
   padding: 75px 0 110px 300px;
 }
 
@@ -22,13 +24,13 @@
     height: 317px;
     top: 5px;
     left: -210px;
-    background-image: url("../img/year.png");
+    background-image: url("../img/year-desktop.png");
     background-repeat: no-repeat;
   }
 }
 
 .about-company__text {
-  width: 984px;
+  max-width: 984px;
   font-family: PT Mono;
   font-weight: 400;
   font-size: 16px;
@@ -59,4 +61,84 @@
     color: $white-color;
     background: $blue-color;
   }
+}
+
+.about-company__text-tablet {
+  display: none;
+}
+
+
+@media (max-width: $tablet-width) {
+
+  .about-company {
+    @include wrap-tablet;
+  }
+
+  .about-company__wrap {
+    max-width: 720px;
+    padding: 26px 0 83px 188px;
+  }
+
+  .about-company__text-tablet {
+    display: inline;
+  }
+
+  .about-company__text-desktop {
+    display: none;
+  }
+
+  .about-company__title {
+    font-size: 32px;
+    line-height: 45px;
+    margin: 0 0 24px -3px;
+    &::before {
+      width: 244px;
+      height: 362px;
+      top: -2px;
+      left: -210px;
+      background-image: url("../img/year-tablet.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .about-company__text {
+    max-width: 532px;
+  }
+
+  .about-company__button {
+    padding: 12px 0 14px 0;
+    margin-top: 43px;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+
+  .about-company {
+    @include wrap-mobile;
+  }
+
+  .about-company__wrap {
+    width: 290px;
+    padding: 37px 0 65px 0;
+  }
+
+  .about-company__title {
+    font-size: 28px;
+    line-height: 39px;
+    margin: 0 0 21px -1px;
+    &::before {
+      display: none;
+    }
+  }
+
+  .about-company__text {
+    margin: 0 0 40px 2px;
+  }
+
+  .about-company__button {
+    padding: 13px 0 14px 0;
+    margin: -12px 0 0 1px;
+  }
+
 }
