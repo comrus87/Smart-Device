@@ -1,5 +1,6 @@
 .service {
   background: #1B2D37;
+  padding: 86px 0 127px 0;
 }
 
 .service__wrap {
@@ -12,12 +13,14 @@
   font-size: 36px;
   line-height: 51px;
   color: $white-color;
+  margin: 0 auto 52px;
+  max-width: 1170px;
 }
 
 .service__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -25,7 +28,146 @@
 }
 
 .service__item {
-  width: 370px;
+  width: calc(33.3% - 20px);
   min-height: 620px;
+  position: relative;
+}
+
+.service__link {
+  display: block;
+  text-decoration: none;
+  color: $white-color;
+  font-family: Roboto Condensed;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 170px;
+  margin: 52px 0 0 44px;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 63px;
+    height: 63px;
+    bottom: 0;
+    right: 0;
+    background: url("../img/vector.svg") center no-repeat, $blue-color;
+    cursor: pointer;
+  }
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.service__item--production {
   background: url("../img/service-picture1-desktop.png") no-repeat;
+}
+
+.service__item--installation {
+  background: url("../img/service-picture2-desktop.png") no-repeat;
+}
+
+.service__item--components {
+  background: url("../img/service-picture3-desktop.png") no-repeat;
+}
+
+@media (max-width: $tablet-width) {
+
+  .service {
+    padding: 50px 0 31px 0;
+  }
+
+  .service__wrap {
+    @include wrap-tablet;
+  }
+
+  .service__title {
+    font-size: 32px;
+    line-height: 45px;
+    margin: 0 auto 50px;
+    max-width: 720px;
+    padding-right: 100px;
+  }
+
+  .service__list {
+    max-width: 720px;
+  }
+
+  .service__item {
+    width: 100%;
+    min-height: 256px;
+    margin-bottom: 46px;
+  }
+
+  .service__link {
+    margin: 40px 0 0 45px;
+  }
+
+  .service__item--production {
+    background: url("../img/service-picture1-tablet.png") no-repeat;
+  }
+
+  .service__item--installation {
+    background: url("../img/service-picture2-tablet.png") no-repeat;
+  }
+
+  .service__item--components {
+    background: url("../img/service-picture3-tablet.png") no-repeat;
+  }
+
+  .service__link--components {
+    margin: 49px 0 0 45px;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+
+  .service {
+    padding: 50px 0 34px 0;
+  }
+
+  .service__wrap {
+    @include wrap-mobile;
+  }
+
+  .service__title {
+    font-size: 28px;
+    line-height: 39px;
+    margin: 0 auto 42px;
+    max-width: 290px;
+    padding: 0 0 0 10px;
+  }
+
+  .service__list {
+    max-width: 290px;
+  }
+
+  .service__item {
+    width: 100%;
+    min-height: 256px;
+    margin-bottom: 30px;
+  }
+
+  .service__link {
+    margin: 20px 0 0 35px;
+  }
+
+  .service__item--production {
+    background: url("../img/service-picture1-mobile.png") no-repeat;
+  }
+
+  .service__item--installation {
+    background: url("../img/service-picture2-mobile.png") no-repeat;
+  }
+
+  .service__item--components {
+    background: url("../img/service-picture3-mobile.png") no-repeat;
+  }
+
+  .service__link--components {
+    margin: 30px 0 0 35px;
+  }
+
 }
