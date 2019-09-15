@@ -6,11 +6,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 33px 0 0;
+  padding: 36px 0 0;
   color: $white-color;
 }
 
-.page-header__logo-wrap {
+.page-header__link {
    display: flex;
    align-items: center;
 }
@@ -20,25 +20,32 @@
    align-items: center;
 }
 
-.page-header__title {
+.logo-title {
   position: relative;
   font-weight: 700;
   font-family: "Roboto Condensed";
   line-height: 29px;
   font-size: 25px;
+}
+
+.page-header__title {
   margin: -16px 0 0 16px;
 }
 
-.page-header__title-description {
+
+.title-description {
   display: block;
-  width: 106px;
   position: absolute;
-  bottom: -15px;
   font-weight: 400;
   font-family: "Roboto";
   line-height: 14px;
   font-size: 12px;
   color: #788891;
+}
+
+.page-header__title-description {
+  width: 106px;
+  bottom: -15px;
 }
 
 .page-header__mail-link,
