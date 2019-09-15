@@ -136,3 +136,97 @@ background-position: left calc(50% - 355px) top 160px,
     background: url("../img/checked.svg") center no-repeat;
 }
 
+@media (max-width: $tablet-width) {
+
+  .block-form {
+    background: $blue-color;
+  }
+
+  .block-form__wrap {
+    @include wrap-tablet;
+    padding: 80px 25px 103px;
+  }
+
+
+  .block-form__title {
+    font-size: 32px;
+    line-height: 45px;
+    padding-left: 63px;
+  }
+
+  .block-form__description {
+    padding-left: 68px;
+    margin: 16px 0 55px;
+  }
+
+
+  .block-form__form {
+    padding: 0 60px 0 67px;
+  }
+
+  .block-form__input {
+    padding: 13px 17px 17px;
+    margin: 0 0 44px 0;
+  }
+
+  .block-form__textarea {
+    min-height: 158px;
+    padding: 12px 16px;
+  }
+
+  .block-form__button {
+    width: 280px;
+    padding: 15px 0 16px;
+
+  }
+
+  .block-form__label-checkbox {
+    margin: 54px 3px 0 40px;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+
+  .block-form__wrap {
+    @include wrap-mobile;
+    padding: 30px 15px 41px;
+  }
+
+  .block-form__title {
+    font-size: 28px;
+    line-height: 39px;
+    padding: 0;
+  }
+
+  .block-form__description {
+    padding: 0;
+    margin: 13px 0 25px;
+  }
+
+  .block-form__form {
+    padding: 0;
+  }
+
+  .block-form__input {
+    width: 100%;
+    padding: 16px 16px 18px;
+    margin: 0 0 30px 0;
+  }
+
+  .block-form__textarea {
+    min-height: 104px;
+    padding: 12px 16px;
+  }
+
+  .block-form__button {
+    width: 100%;
+    padding: 15px 0 16px;
+    margin-top: 30px;
+  }
+
+ .block-form__label-checkbox {
+    margin: 29px 0 0 33px;
+  }
+
+}
