@@ -4,7 +4,8 @@
    background-color: #1d2e36;
    background: url("../img/bg-picture-desktop.png") no-repeat,
                url("../img/bg-desktop.jpg") no-repeat;
-   background-position: 1038px 295px, 50% 100%;
+   background-position: left calc(50% + 430px) top 295px,
+                        left 50% top 35px;
    padding: 350px 0 278px 0;
 }
 
@@ -101,7 +102,8 @@
   .intro {
     background: url("../img/bg-picture-tablet.png") no-repeat,
                 url("../img/bg-tablet.jpg") no-repeat;
-    background-position: right 0px top 113px, top center;
+    background-position: left 100% top 113px,
+                         left 50% top 0;
     background-size: auto, cover;
     padding: 188px 0 163px 0;
     margin: -75px auto 0;
@@ -148,7 +150,8 @@
     margin: -80px auto 0;
     background: url("../img/bg-picture-mobile.png") no-repeat,
                 url("../img/bg-mobile.jpg") no-repeat;
-    background-position: left 26px top 92px, top center;
+    background-position: left 26px top 92px,
+                     left 50% top 0;
     background-size: auto, cover;
     padding: 288px 0 71px 0;
   }

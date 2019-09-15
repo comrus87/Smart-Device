@@ -1,5 +1,10 @@
 .block-form {
-  background: $blue-color;
+background: url("../img/airplane.png") no-repeat,
+            url("../img/bg-forma.png") no-repeat,
+            $blue-color;
+background-position: left calc(50% - 355px) top 160px,
+                     left 50% top -61px,
+                     center;
 }
 
 .block-form__wrap {
@@ -97,10 +102,37 @@
 }
 
 .block-form__label-checkbox {
+  display: block;
+  position: relative;
   font-family: PT Mono;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: $white-color;
   opacity: 0.8;
+  max-width: 230px;
+  margin: 54px 0 0 40px;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white-color;
+    left: -32px;
+    top: 2px;
+  }
 }
+
+.block-form__checkbox:checked + .block-form__label-checkbox::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white-color;
+    left: -32px;
+    top: 2px;
+    background: url("../img/checked.svg") center no-repeat;
+}
+

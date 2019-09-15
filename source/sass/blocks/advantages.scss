@@ -1,10 +1,16 @@
-.advantages{
-  @include wrap-desktop;
+.advantages {
+  background: url("../img/bg-advantages-desktop.png") no-repeat;
+  background-position: left 50% top -31px;
 };
+
+.advantages__wrap {
+  @include wrap-desktop;
+  padding-top: 109px;
+}
 
 .advantages__list {
   list-style: none;
-  margin: 109px auto 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +25,7 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue-color;
   margin-bottom: 30px;
+  background: $white-color;
   &:hover {
     background: $blue-color;
     cursor: pointer;
@@ -68,12 +75,13 @@
 
 @media (max-width: $tablet-width) {
 
-  .advantages{
+  .advantages__wrap {
     @include wrap-tablet;
+    padding-top: 54px;
   };
 
   .advantages__list {
-    margin: 54px auto 0;
+    margin: 0 auto;
     max-width: 720px;
   }
 
@@ -128,12 +136,13 @@
 
 @media (max-width: $mobile-width) {
 
-  .advantages{
+  .advantages__wrap {
     @include wrap-mobile;
+    padding-top: 37px;
   };
 
   .advantages__list {
-    margin: 37px auto 0;
+    margin: 0 auto;
     width: 290px;
   }
 

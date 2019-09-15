@@ -1,11 +1,7 @@
-.about-company {
-  @include wrap-desktop;
-}
-
 .about-company__wrap {
   margin: 0 auto;
   max-width: 1420px;
-  padding: 75px 0 108px 300px;
+  padding: 75px 35px 110px 305px;
 }
 
 .about-company__title {
@@ -42,7 +38,7 @@
 .about-company__button {
   display: block;
   width: 180px;
-  padding: 14px 0 16px 0;
+  padding: 14px 0 13px 0;
   background: transparent;
   font-family: Roboto Condensed;
   font-weight: 700;
