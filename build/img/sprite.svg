@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="checked" viewBox="0 0 9 6">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="button-close" viewBox="0 0 16 2">
+<path d="M0 0.5H16V1.5H0V0.5Z" fill="#C4C4C4"/>
+</symbol><symbol id="button-open" viewBox="0 0 16 16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 7.5V0H7.5V7.5H0V8.5H7.5V16H8.5V8.5H16V7.5H8.5Z" fill="#C4C4C4"/>
+</symbol><symbol id="checked" viewBox="0 0 9 6">
 <path d="M0.5 2L3.5 5L8 0.5" stroke="white"/>
 </symbol><symbol id="detective" viewBox="0 0 36 31">
 <path d="M18 9.75821C17.6119 9.75821 17.2969 10.0752 17.2969 10.4663C17.2969 10.8571 17.6119 11.1743 18 11.1743C18.3881 11.1743 18.7031 10.8571 18.7031 10.4663C18.7031 10.0752 18.3881 9.75821 18 9.75821Z"/>

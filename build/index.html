@@ -9,7 +9,11 @@
 </head>
 <body>
     <div style="display:none">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="checked" viewbox="0 0 9 6">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="button-close" viewbox="0 0 16 2">
+<path d="M0 0.5H16V1.5H0V0.5Z" fill="#C4C4C4"></path>
+</symbol><symbol id="button-open" viewbox="0 0 16 16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 7.5V0H7.5V7.5H0V8.5H7.5V16H8.5V8.5H16V7.5H8.5Z" fill="#C4C4C4"></path>
+</symbol><symbol id="checked" viewbox="0 0 9 6">
 <path d="M0.5 2L3.5 5L8 0.5" stroke="white"></path>
 </symbol><symbol id="detective" viewbox="0 0 36 31">
 <path d="M18 9.75821C17.6119 9.75821 17.2969 10.0752 17.2969 10.4663C17.2969 10.8571 17.6119 11.1743 18 11.1743C18.3881 11.1743 18.7031 10.8571 18.7031 10.4663C18.7031 10.0752 18.3881 9.75821 18 9.75821Z"></path>
@@ -218,6 +222,7 @@
                   <span class="page-footer__title-description title-description">умные технологии</span>
                 </p>
               </a>
+              <span class="page-footer__rights-date page-footer__rights-date--tablet">1999-2018 SD Service Devices</span>
               <ul class="page-footer__social-list">
                 <li class="page-footer__social-item">
                   <a class="page-footer__link-facebook">
@@ -247,8 +252,8 @@
           <div class="page-footer__nav-wrap">
             <div class="page-footer__nav">
               <h2 class="page-footer__nav-title">Разделы сайта</h2>
-              <button type="button" class="page-footer__switch-button"></button>
-              <ul class="page-footer__nav-list">
+              <button type="button" class="page-footer__switch-button page-footer__nav--close"></button>
+              <ul class="page-footer__nav-list footer-list--closed nav-list--no-js">
                 <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">О компании</a></li>
                 <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Комплектующие</a></li>
                 <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Продукты</a></li>
@@ -261,7 +266,8 @@
 
             <div class="page-footer__contacts">
               <h2 class="page-footer__contacts-title">Наш офис</h2>
-              <div class="page-footer__contacts-wrap">
+              <button type="button" class="page-footer__switch-button page-footer__nav--open"></button>
+              <div class="page-footer__contacts-wrap contacts--no-js">
                 <a class="page-footer__contacts-text"> г. Мытищи, Олимпийский проспект, д.10</a>
                 <a class="page-footer__contacts-text" href="tel:+74955894050">+7 (495) 589-40-50</a>
                 <a class="page-footer__contacts-text" href="tel:+79250038767">+7 (925) 003-87-67</a>
@@ -275,7 +281,7 @@
       <div class="page-footer__bottom">
         <div class="page-footer__bottom-wrap">
           <span class="page-footer__rights">Все права защищены</span>
-          <span class="page-footer__rights-date">1999-2018 SD Service Devices</span>
+          <span class="page-footer__rights-date page-footer__rights-date--desktop">1999-2018 SD Service Devices</span>
           <a class="page-footer__privacy" href="#">Условия конфиденциальности</a>
           <a class="page-footer__develop" href="#">Developed by wow studio </a>
         </div>

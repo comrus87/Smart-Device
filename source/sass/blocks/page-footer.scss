@@ -119,6 +119,10 @@
   width: 44%;
 }
 
+.page-footer__rights-date--tablet {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
 
   .page-footer__top {
@@ -185,23 +189,129 @@
     @include wrap-tablet;
     padding: 0 27px;
     justify-content: space-between;
-
   }
 
   .page-footer__rights {
     display: none;
   }
 
-  .page-footer {
-    position: relative;
+  .page-footer__rights-date--desktop {
+    display: none;
   }
 
-  .page-footer__rights-date {
-    width: 32%;
-    position: absolute;
-    left: 42.6%;
-    top: 8%;
+  .page-footer__rights-date--tablet {
+    display: block;
+    width: 35%;
+    padding: 2px 0 0 15px;
   }
 
+}
+
+@media (max-width: $mobile-width) {
+
+  .page-footer__logo-wrap {
+    @include wrap-mobile;
+    flex-direction: column;
+    padding: 46px 52px 54px;
+  }
+
+  .page-footer__nav-list {
+    margin-top: 32px;
+    width: 90%;
+  }
+
+  .page-footer__switch-button {
+    display: block;
+  }
+
+  .page-footer__title {
+    margin: 7px 0 0 18px;
+  }
+
+  .page-footer__rights-date--tablet {
+    width: 235px;
+    padding: 0;
+    margin: 27px 0 31px;
+  }
+
+  .page-footer__nav-wrap {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .page-footer__contacts-wrap {
+    margin-top: 32px;
+    width: 80%;
+  }
+
+  .page-footer__nav {
+    width: 100%;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+    display: flex;
+    padding: 23px 16px 27px 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .page-footer__contacts {
+    display: flex;
+    padding: 29px 15px 28px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 28px 16px 27px 15px;
+  }
+
+  .page-footer__nav-title,
+  .page-footer__contacts-title {
+    margin: 0;
+    width: 94%;
+  }
+
+  .page-footer__switch-button {
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+
+  .page-footer__nav--close {
+    width: 16px;
+    height: 16px;
+    background: url("../img/button-open.svg") center no-repeat;
+    outline: none;
+  }
+
+  .page-footer__nav--open {
+    width: 16px;
+    height: 1px;
+    background: url("../img/button-close.svg") center no-repeat;
+    outline: none;
+  }
+
+  .page-footer__bottom {
+    padding: 27px 0 26px;
+  }
+
+  .page-footer__bottom-wrap {
+    @include wrap-mobile;
+    padding: 0 27px;
+    flex-direction: column;
+  }
+
+  .page-footer__privacy {
+    width: 217px;
+    margin-bottom: 21px;
+  }
+
+  .footer-list--closed {
+    display: none;
+  }
+
+  // .nav-list--no-js,
+  // .contacts--no-js {
+  //   display: block;
+  // }
 
 }
