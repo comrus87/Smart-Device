@@ -263,21 +263,20 @@
   .page-footer__switch-button {
     display: block;
     border: none;
-    background-color: transparent;
-  }
-
-  .page-footer__nav--close {
     width: 16px;
     height: 16px;
     background: url("../img/button-open.svg") center no-repeat;
     outline: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 
   .page-footer__nav--open {
-    width: 16px;
-    height: 1px;
     background: url("../img/button-close.svg") center no-repeat;
-    outline: none;
   }
 
   .page-footer__bottom {
@@ -298,8 +297,8 @@
   .footer-list--closed {
     display: none;
   }
-  // .nav-list--no-js,
-  // .contacts--no-js {
-  //   display: block;
-  // }
+
+  .list--no-js {
+    display: block;
+  }
 }
