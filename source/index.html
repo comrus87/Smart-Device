@@ -136,10 +136,10 @@
 
             <textarea class="block-form__textarea" id="form-textarea" placeholder="Ваш вопрос" required></textarea>
 
-            <button class="block-form__button" type="submit">Задать вопрос</button>
+            <button class="block-form__button form-button" type="submit">Задать вопрос</button>
 
             <input class="visually-hidden block-form__checkbox" type="checkbox" id="check-agree" name="agree" checked>
-            <label class="block-form__label-checkbox" for="check-agree">Я согласен на обработку персональных данных</label>
+            <label class="block-form__label-checkbox label-checkbox" for="check-agree">Я согласен на обработку персональных данных</label>
           </form>
         </div>
       </section>
@@ -224,28 +224,34 @@
       </div>
     </footer>
 
-    <div class="modal-call">
-      <div class="modal-call__wrap">
-        <h2 class="modal-call__title">Закажите звонок</h2>
-        <button class="modal-call__close" type="button"></button>
-        <p class="modal-call__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="modal-call__form" method="post" action="#">
-          <input class="modal-call__input" type="text" id="modal-name" placeholder="Имя" required>
-          <label for="modal-name" class="visually-hidden"></label>
+    <div class="overlay-modal">
+      <div class="modal-call">
+        <div class="modal-call__wrap">
+          <h2 class="modal-call__title">Закажите звонок</h2>
+          <button class="modal-call__close" type="button">
+            <svg class="modal-call__image-close" width="17" height="17">
+              <use xlink:href="#modal-close"></use>
+            </svg>
+          </button>
+          <p class="modal-call__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <form class="modal-call__form" method="post" action="#">
+            <input class="modal-call__input" type="text" id="modal-name" placeholder="Имя" required>
+            <label for="modal-name" class="visually-hidden"></label>
 
-          <input class="modal-name__input" type="tel" id="modal-phone" placeholder="Телефон" required>
-          <label for="modal-phone" class="visually-hidden"></label>
+            <input class="modal-call__input" type="tel" id="modal-phone" placeholder="Телефон" required>
+            <label for="modal-phone" class="visually-hidden"></label>
 
-          <textarea class="modal-call__textarea" id="modal-question" placeholder="Ваш вопрос" required></textarea>
-          <label for="modal-question" class="visually-hidden"></label>
+            <textarea class="modal-call__textarea" id="modal-question" placeholder="Ваш вопрос" required></textarea>
+            <label for="modal-question" class="visually-hidden"></label>
 
-          <button class="modal-call__button" type="submit">Отправить</button>
+            <button class="modal-call__button form-button" type="submit">Отправить</button>
 
-          <input class="visually-hidden modal-call__checkbox" type="checkbox" id="modal-agree" name="agree" checked>
-          <label class="modal-call__label-checkbox" for="modal-agree">Я согласен на обработку персональных данных</label>
-        </form>
+            <input class="visually-hidden modal-call__checkbox" type="checkbox" id="modal-agree" name="agree" checked>
+            <label class="modal-call__label-checkbox label-checkbox" for="modal-agree">Я согласен на обработку персональных данных</label>
+          </form>
+        </div>
       </div>
-    </div>
 
+    </div>
 </body>
 </html>
