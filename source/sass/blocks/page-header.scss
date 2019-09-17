@@ -1,6 +1,6 @@
 .page-header {
   @include wrap-desktop;
-};
+}
 
 .page-header__wrap {
   display: flex;
@@ -11,13 +11,13 @@
 }
 
 .page-header__link {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .page-header__contacts-wrap {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-title {
@@ -32,12 +32,11 @@
   margin: -16px 0 0 16px;
 }
 
-
 .title-description {
   display: block;
   position: absolute;
   font-weight: 400;
-  font-family: "Roboto";
+  font-family: $roboto-medium;
   line-height: 14px;
   font-size: 12px;
   color: #788891;
@@ -57,6 +56,7 @@
   font-size: 16px;
   font-weight: 400;
   cursor: default;
+
   &:hover,
   &:focus {
     opacity: 0.7;
@@ -83,34 +83,33 @@
 }
 
 .page-header__button {
-   display: block;
-   width: 180px;
-   cursor: pointer;
-   background: none;
-   color: $white-color;
-   border: 1px solid $white-color;
-   border-radius: 5px;
-   text-transform: uppercase;
-   font-family: $roboto-condensed;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 16px;
-   text-align: center;
-   padding: 15px 0 12px;
-   margin: -5px 0 0 0;
-   letter-spacing: 0.05em;
-   &:hover,
-   &:focus {
-     opacity: 0.7;
-   }
+  display: block;
+  width: 180px;
+  cursor: pointer;
+  background: none;
+  color: $white-color;
+  border: 1px solid $white-color;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  padding: 15px 0 12px;
+  margin: -5px 0 0 0;
+  letter-spacing: 0.05em;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
-
 @media (max-width: $tablet-width) {
-
   .page-header {
     @include wrap-tablet;
-  };
+  }
 
   .page-header__wrap {
     max-width: 720px;
@@ -135,14 +134,12 @@
     height: 24px;
     margin: -8px 0 0 0;
   }
-
 }
 
 @media (max-width: $mobile-width) {
-
   .page-header {
     @include wrap-mobile;
-  };
+  }
 
   .page-header__wrap {
     max-width: 290px;
@@ -160,9 +157,6 @@
   }
 
   .page-header__mail-logo {
-    margin: 0 23px 0 0;
     margin: -8px 24px 0 0;
-
   }
-
 }

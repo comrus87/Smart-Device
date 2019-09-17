@@ -12,6 +12,7 @@
   color: #666666;
   margin: 0 0 22px 0;
   position: relative;
+
   &::before {
     content: "";
     display: block;
@@ -52,6 +53,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top: 38px;
+
   &:hover,
   &:focus {
     color: $white-color;
@@ -65,7 +67,6 @@
 
 
 @media (max-width: $tablet-width) {
-
   .about-company {
     @include wrap-tablet;
   }
@@ -87,6 +88,7 @@
     font-size: 32px;
     line-height: 45px;
     margin: 0 0 24px -3px;
+
     &::before {
       width: 244px;
       height: 362px;
@@ -105,11 +107,9 @@
     padding: 12px 0 14px 0;
     margin-top: 43px;
   }
-
 }
 
 @media (max-width: $mobile-width) {
-
   .about-company {
     @include wrap-mobile;
   }
@@ -123,6 +123,7 @@
     font-size: 28px;
     line-height: 39px;
     margin: 0 0 21px -1px;
+
     &::before {
       display: none;
     }
@@ -136,5 +137,4 @@
     padding: 13px 0 14px 0;
     margin: -12px 0 0 1px;
   }
-
 }

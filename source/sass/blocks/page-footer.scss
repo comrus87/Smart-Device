@@ -1,8 +1,8 @@
 .page-footer__top {
   @include wrap-desktop;
-    display: flex;
-    padding-top: 65px;
-    padding-bottom: 58px;
+  display: flex;
+  padding-top: 65px;
+  padding-bottom: 58px;
 }
 
 .page-footer__switch-button {
@@ -69,7 +69,6 @@
   margin: 0 0 24px 3px;
 }
 
-
 .page-footer__nav-link,
 .page-footer__contacts-text {
   display: block;
@@ -79,6 +78,7 @@
   line-height: 25px;
   color: $black-color;
   opacity: 0.5;
+
   &:hover,
   &:focus {
     opacity: 0.7;
@@ -125,7 +125,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .page-footer__top {
     padding: 0;
     flex-wrap: wrap;
@@ -159,7 +158,7 @@
   }
 
   .page-footer__nav {
-   width: 52.1%;
+    width: 52.1%;
   }
 
   .page-footer__nav-item {
@@ -169,8 +168,7 @@
   .page-footer__nav-title,
   .page-footer__contacts-title {
     margin: 0 0 25px 2px;
-
-}
+  }
 
   .page-footer__nav-list {
     flex-direction: column;
@@ -180,11 +178,9 @@
     order: 2;
   }
 
-
   .page-footer__bottom {
     padding: 21px 0 24px;
   }
-
 
   .page-footer__bottom-wrap {
     @include wrap-tablet;
@@ -205,11 +201,9 @@
     width: 35%;
     padding: 2px 0 0 15px;
   }
-
 }
 
 @media (max-width: $mobile-width) {
-
   .page-footer__logo-wrap {
     @include wrap-mobile;
     flex-direction: column;
@@ -219,10 +213,6 @@
   .page-footer__nav-list {
     margin-top: 32px;
     width: 90%;
-  }
-
-  .page-footer__switch-button {
-    display: block;
   }
 
   .page-footer__title {
@@ -257,7 +247,6 @@
 
   .page-footer__contacts {
     display: flex;
-    padding: 29px 15px 28px;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
@@ -309,10 +298,8 @@
   .footer-list--closed {
     display: none;
   }
-
   // .nav-list--no-js,
   // .contacts--no-js {
   //   display: block;
   // }
-
 }

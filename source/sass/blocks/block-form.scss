@@ -1,17 +1,12 @@
 .block-form {
-background: url("../img/airplane.png") no-repeat,
-            url("../img/bg-forma.png") no-repeat,
-            $blue-color;
-background-position: left calc(50% - 355px) top 160px,
-                     left 50% top -61px,
-                     center;
+  background: url("../img/airplane.png") no-repeat, url("../img/bg-forma.png") no-repeat, $blue-color;
+  background-position: left calc(50% - 355px) top 160px, left 50% top -61px, center;
 }
 
 .block-form__wrap {
   @include wrap-desktop;
   padding: 92px 35px 113px;
 }
-
 
 .block-form__title {
   margin: 0;
@@ -50,13 +45,14 @@ background-position: left calc(50% - 355px) top 160px,
   padding: 14px 16px;
   outline: none;
   margin: 0 0 40px 0;
+
   &::placeholder {
     color: $white-color;
     font-family: $pt-mono;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-  };
+  }
 }
 
 .block-form__textarea {
@@ -68,13 +64,14 @@ background-position: left calc(50% - 355px) top 160px,
   min-height: 155px;
   resize: none;
   padding: 14px 16px;
-    &::placeholder {
+
+  &::placeholder {
     color: $white-color;
     font-family: $pt-mono;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-  };
+  }
 }
 
 .block-form__button {
@@ -94,6 +91,7 @@ background-position: left calc(50% - 355px) top 160px,
   border-radius: 5px;
   cursor: pointer;
   margin-top: 45px;
+
   &:hover,
   &:focus {
     color: $blue-color;
@@ -112,6 +110,7 @@ background-position: left calc(50% - 355px) top 160px,
   opacity: 0.8;
   max-width: 230px;
   margin: 54px 0 0 40px;
+
   &::before {
     content: "";
     position: absolute;
@@ -125,19 +124,18 @@ background-position: left calc(50% - 355px) top 160px,
 }
 
 .block-form__checkbox:checked + .block-form__label-checkbox::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 16px;
-    height: 16px;
-    border: 1px solid $white-color;
-    left: -32px;
-    top: 2px;
-    background: url("../img/checked.svg") center no-repeat;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $white-color;
+  left: -32px;
+  top: 2px;
+  background: url("../img/checked.svg") center no-repeat;
 }
 
 @media (max-width: $tablet-width) {
-
   .block-form {
     background: $blue-color;
   }
@@ -146,7 +144,6 @@ background-position: left calc(50% - 355px) top 160px,
     @include wrap-tablet;
     padding: 80px 25px 103px;
   }
-
 
   .block-form__title {
     font-size: 32px;
@@ -177,17 +174,14 @@ background-position: left calc(50% - 355px) top 160px,
   .block-form__button {
     width: 280px;
     padding: 15px 0 16px;
-
   }
 
   .block-form__label-checkbox {
     margin: 54px 10px 0 40px;
   }
-
 }
 
 @media (max-width: $mobile-width) {
-
   .block-form__wrap {
     @include wrap-mobile;
     padding: 30px 15px 41px;
@@ -225,8 +219,7 @@ background-position: left calc(50% - 355px) top 160px,
     margin-top: 30px;
   }
 
- .block-form__label-checkbox {
+  .block-form__label-checkbox {
     margin: 29px 0 0 33px;
   }
-
 }

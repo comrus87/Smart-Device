@@ -1,5 +1,5 @@
 .service {
-  background: #1B2D37;
+  background: $black-color;
   padding: 88px 0 98px 0;
 }
 
@@ -44,6 +44,7 @@
   font-size: 20px;
   line-height: 30px;
   padding: 52px 156px 0 44px;
+
   &::after {
     content: "";
     position: absolute;
@@ -55,6 +56,7 @@
     background: url("../img/vector.svg") center no-repeat, $blue-color;
     cursor: pointer;
   }
+
   &:hover,
   &:focus {
     opacity: 0.7;
@@ -78,7 +80,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .service {
     padding: 50px 0 31px 0;
   }
@@ -127,11 +128,9 @@
   .service__link--components {
     padding: 49px 520px 0 45px;
   }
-
 }
 
 @media (max-width: $mobile-width) {
-
   .service {
     padding: 50px 0 34px 0;
   }
@@ -179,5 +178,4 @@
   .service__link--components {
     padding: 30px 100px 0 35px;
   }
-
 }

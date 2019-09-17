@@ -1,13 +1,11 @@
 .intro {
-   display: block;
-   margin: -124px auto 0;
-   background-color: #1d2e36;
-   background: url("../img/bg-picture-desktop.png") no-repeat,
-               url("../img/bg-desktop.jpg") no-repeat;
-   background-size: auto, cover;
-   background-position: left 50% top 35px,
-                        center;
-   padding: 350px 0 278px 0;
+  display: block;
+  margin: -124px auto 0;
+  background: url("../img/bg-picture-desktop.png") no-repeat, url("../img/bg-desktop.jpg") no-repeat;
+  background-size: auto, cover;
+  background-color: #1d2e36;
+  background-position: left 50% top 35px, center;
+  padding: 350px 0 278px 0;
 }
 
 .intro__wrap {
@@ -32,7 +30,6 @@
 }
 
 .intro__desription {
-  margin: 0;
   padding: 0;
   max-width: 683px;
   font-family: $pt-mono;
@@ -42,6 +39,7 @@
   color: $white-color;
   margin: 0 0 45px 92px;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -71,6 +69,7 @@
   padding: 15px 0 18px;
   margin: 0 0 0 92px;
   cursor: pointer;
+
   &:hover,
   &:focus {
     opacity: 0.7;
@@ -92,6 +91,7 @@
   transform: rotate(-90deg);
   top: 420px;
   left: -5px;
+
   &:hover,
   &:focus {
     opacity: 0.7;
@@ -99,10 +99,8 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .intro {
-    background: url("../img/bg-picture-tablet.png") no-repeat,
-                url("../img/bg-tablet.jpg") no-repeat;
+    background: url("../img/bg-picture-tablet.png") no-repeat, url("../img/bg-tablet.jpg") no-repeat;
     background-position: left 100% top 0, center;
     background-size: auto, cover;
     padding: 188px 0 163px 0;
@@ -127,6 +125,7 @@
     font-size: 18px;
     line-height: 28px;
     margin: 0 0 56px 88px;
+
     &::before {
       width: 33px;
       left: -48px;
@@ -143,15 +142,12 @@
   .intro__scroll {
     display: none;
   }
-
 }
 
 @media (max-width: $mobile-width) {
-
   .intro {
     margin: -80px auto 0;
-    background: url("../img/bg-picture-mobile.png") no-repeat,
-                url("../img/bg-mobile.jpg") no-repeat;
+    background: url("../img/bg-picture-mobile.png") no-repeat, url("../img/bg-mobile.jpg") no-repeat;
     background-position: left 100% top 0, center;
     background-size: auto, cover;
     padding: 288px 0 71px 0;
@@ -175,6 +171,7 @@
     font-size: 16px;
     line-height: 25px;
     margin: 0 0 41px 50px;
+
     &::before {
       left: -48px;
       top: 16px;
@@ -192,10 +189,7 @@
     display: block;
   }
 
-   .intro__button--desktop {
-     display: none;
+  .intro__button--desktop {
+    display: none;
   }
-
-
-
 }
