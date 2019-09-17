@@ -59,7 +59,7 @@
 
 .page-footer__nav-title,
 .page-footer__contacts-title {
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
@@ -73,12 +73,16 @@
 .page-footer__nav-link,
 .page-footer__contacts-text {
   display: block;
-  font-family: PT Mono;
+  font-family: $pt-mono;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   color: $black-color;
   opacity: 0.5;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .page-footer__bottom {
@@ -86,11 +90,8 @@
   padding: 14px 0;
 }
 
-.page-footer__rights,
-.page-footer__rights-date,
-.page-footer__privacy,
-.page-footer__develop {
-  font-family: PT Mono;
+.page-footer__copyright {
+  font-family: $pt-mono;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -107,19 +108,19 @@
   align-items: center;
 }
 
-.page-footer__rights {
+.copyright--rights {
   width: 15.8%;
 }
 
-.page-footer__rights-date {
+.copyright--date {
   width: 26.5%;
 }
 
-.page-footer__privacy {
+.copyright--privacy {
   width: 44%;
 }
 
-.page-footer__rights-date--tablet {
+.copyright-date--tablet {
   display: none;
 }
 
@@ -191,15 +192,15 @@
     justify-content: space-between;
   }
 
-  .page-footer__rights {
+  .copyright--rights {
     display: none;
   }
 
-  .page-footer__rights-date--desktop {
+  .copyright-date--desktop {
     display: none;
   }
 
-  .page-footer__rights-date--tablet {
+  .copyright-date--tablet {
     display: block;
     width: 35%;
     padding: 2px 0 0 15px;
@@ -228,7 +229,7 @@
     margin: 7px 0 0 18px;
   }
 
-  .page-footer__rights-date--tablet {
+  .copyright-date--tablet {
     width: 235px;
     padding: 0;
     margin: 27px 0 31px;
@@ -300,7 +301,7 @@
     flex-direction: column;
   }
 
-  .page-footer__privacy {
+  .copyright--privacy {
     width: 217px;
     margin-bottom: 21px;
   }

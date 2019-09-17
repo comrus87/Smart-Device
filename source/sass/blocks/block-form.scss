@@ -15,7 +15,7 @@ background-position: left calc(50% - 355px) top 160px,
 
 .block-form__title {
   margin: 0;
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -24,7 +24,7 @@ background-position: left calc(50% - 355px) top 160px,
 }
 
 .block-form__description {
-  font-family: PT Mono;
+  font-family: $pt-mono;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -52,7 +52,7 @@ background-position: left calc(50% - 355px) top 160px,
   margin: 0 0 40px 0;
   &::placeholder {
     color: $white-color;
-    font-family: PT Mono;
+    font-family: $pt-mono;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -70,7 +70,7 @@ background-position: left calc(50% - 355px) top 160px,
   padding: 14px 16px;
     &::placeholder {
     color: $white-color;
-    font-family: PT Mono;
+    font-family: $pt-mono;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -82,7 +82,7 @@ background-position: left calc(50% - 355px) top 160px,
   width: 270px;
   padding: 14px 0;
   background: transparent;
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -104,7 +104,7 @@ background-position: left calc(50% - 355px) top 160px,
 .block-form__label-checkbox {
   display: block;
   position: relative;
-  font-family: PT Mono;
+  font-family: $pt-mono;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;

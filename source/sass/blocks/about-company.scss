@@ -1,11 +1,11 @@
 .about-company__wrap {
   margin: 0 auto;
   max-width: 1420px;
-  padding: 75px 35px 110px 305px;
+  padding: 97px 35px 110px 305px;
 }
 
 .about-company__title {
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -27,7 +27,7 @@
 
 .about-company__text {
   max-width: 984px;
-  font-family: PT Mono;
+  font-family: $pt-mono;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -40,7 +40,7 @@
   width: 180px;
   padding: 14px 0 13px 0;
   background: transparent;
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -72,7 +72,7 @@
 
   .about-company__wrap {
     max-width: 720px;
-    padding: 26px 0 83px 188px;
+    padding: 40px 0 83px 188px;
   }
 
   .about-company__text-tablet {
@@ -116,7 +116,7 @@
 
   .about-company__wrap {
     width: 290px;
-    padding: 37px 0 65px 0;
+    padding: 68px 0 65px 0;
   }
 
   .about-company__title {

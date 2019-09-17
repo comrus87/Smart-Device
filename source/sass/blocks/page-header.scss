@@ -23,7 +23,7 @@
 .logo-title {
   position: relative;
   font-weight: 700;
-  font-family: "Roboto Condensed";
+  font-family: $roboto-condensed;
   line-height: 29px;
   font-size: 25px;
 }
@@ -52,7 +52,7 @@
 .page-header__phone-link {
   display: flex;
   color: $white-color;
-  font-family: "PT Mono";
+  font-family: $pt-mono;
   line-height: 18px;
   font-size: 16px;
   font-weight: 400;
@@ -91,7 +91,7 @@
    border: 1px solid $white-color;
    border-radius: 5px;
    text-transform: uppercase;
-   font-family: Roboto Condensed;
+   font-family: $roboto-condensed;
    font-weight: 700;
    font-size: 14px;
    line-height: 16px;
@@ -113,6 +113,8 @@
   };
 
   .page-header__wrap {
+    max-width: 720px;
+    margin: 0 auto;
     padding: 24px 0 0 0;
   }
 
@@ -143,6 +145,8 @@
   };
 
   .page-header__wrap {
+    max-width: 290px;
+    margin: 0 auto;
     padding: 20px 0;
   }
 

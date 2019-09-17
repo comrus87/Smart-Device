@@ -4,8 +4,9 @@
    background-color: #1d2e36;
    background: url("../img/bg-picture-desktop.png") no-repeat,
                url("../img/bg-desktop.jpg") no-repeat;
-   background-position: left calc(50% + 430px) top 295px,
-                        left 50% top 35px;
+   background-size: auto, cover;
+   background-position: left 50% top 35px,
+                        center;
    padding: 350px 0 278px 0;
 }
 
@@ -20,7 +21,7 @@
 .intro__title {
   padding: 0;
   display: block;
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -34,7 +35,7 @@
   margin: 0;
   padding: 0;
   max-width: 683px;
-  font-family: PT Mono;
+  font-family: $pt-mono;
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
@@ -60,7 +61,7 @@
   border-radius: 5px;
   color: $white-color;
   width: 407px;
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -81,7 +82,7 @@
 }
 
 .intro__scroll {
-  font-family: PT Mono;
+  font-family: $pt-mono;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -102,29 +103,30 @@
   .intro {
     background: url("../img/bg-picture-tablet.png") no-repeat,
                 url("../img/bg-tablet.jpg") no-repeat;
-    background-position: left 100% top 113px,
-                         left 50% top 0;
+    background-position: left 100% top 0, center;
     background-size: auto, cover;
     padding: 188px 0 163px 0;
     margin: -75px auto 0;
   }
 
   .intro__wrap {
-    @include wrap-tablet;
+    max-width: 720px;
+    padding: 0 25px;
+    margin: 0 auto;
   }
 
   .intro__title {
     font-size: 60px;
     line-height: 70px;
     width: 470px;
-    margin: 0 0 28px 63px;
+    margin: 0 0 28px 38px;
   }
 
   .intro__desription {
     width: 365px;
     font-size: 18px;
     line-height: 28px;
-    margin: 0 0 56px 115px;
+    margin: 0 0 56px 88px;
     &::before {
       width: 33px;
       left: -48px;
@@ -134,7 +136,7 @@
 
   .intro__button {
     width: 379px;
-    margin: 0 0 0 114px;
+    margin: 0 0 0 88px;
     padding: 16px 0 18px;
   }
 
@@ -150,14 +152,15 @@
     margin: -80px auto 0;
     background: url("../img/bg-picture-mobile.png") no-repeat,
                 url("../img/bg-mobile.jpg") no-repeat;
-    background-position: left 100% top 92px,
-                     left 50% top 0;
+    background-position: left 100% top 0, center;
     background-size: auto, cover;
     padding: 288px 0 71px 0;
   }
 
-    .intro__wrap {
-    @include wrap-mobile;
+  .intro__wrap {
+    max-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
 
   .intro__title {

@@ -1,6 +1,6 @@
 .service {
   background: #1B2D37;
-  padding: 88px 0 128px 0;
+  padding: 88px 0 98px 0;
 }
 
 .service__wrap {
@@ -8,7 +8,7 @@
 }
 
 .service__title {
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -31,6 +31,7 @@
   width: calc(33.3% - 20px);
   min-height: 620px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .service__link {
@@ -38,7 +39,7 @@
   height: 100%;
   text-decoration: none;
   color: $white-color;
-  font-family: Roboto Condensed;
+  font-family: $roboto-condensed;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -63,14 +64,17 @@
 
 .service__item--production {
   background: url("../img/service-picture1-desktop.png") no-repeat;
+  background-size: cover;
 }
 
 .service__item--installation {
   background: url("../img/service-picture2-desktop.png") no-repeat;
+  background-size: cover;
 }
 
 .service__item--components {
   background: url("../img/service-picture3-desktop.png") no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: $tablet-width) {
@@ -107,14 +111,17 @@
 
   .service__item--production {
     background: url("../img/service-picture1-tablet.png") no-repeat;
+    background-size: cover;
   }
 
   .service__item--installation {
     background: url("../img/service-picture2-tablet.png") no-repeat;
+    background-size: cover;
   }
 
   .service__item--components {
     background: url("../img/service-picture3-tablet.png") no-repeat;
+    background-size: cover;
   }
 
   .service__link--components {
@@ -137,12 +144,11 @@
     font-size: 28px;
     line-height: 39px;
     margin: 0 auto 42px;
-    max-width: 290px;
     padding: 0 0 0 10px;
   }
 
   .service__list {
-    max-width: 290px;
+    width: 100%;
   }
 
   .service__item {
@@ -157,14 +163,17 @@
 
   .service__item--production {
     background: url("../img/service-picture1-mobile.png") no-repeat;
+    background-size: cover;
   }
 
   .service__item--installation {
     background: url("../img/service-picture2-mobile.png") no-repeat;
+    background-size: cover;
   }
 
   .service__item--components {
     background: url("../img/service-picture3-mobile.png") no-repeat;
+    background-size: cover;
   }
 
   .service__link--components {
