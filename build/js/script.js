@@ -1,15 +1,27 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+const overlay = document.querySelector('.overlay-modal');
+const modal = document.querySelector('.modal-call');
+const buttonOpenModal = document.querySelector('.page-header__button');
+const buttonCloseModal = document.querySelector('.modal-call__image-close');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
+buttonOpenModal.addEventListener('click', function () {
+    overlay.classList.remove('overlay-modal--close');
+    overlay.classList.add('overlay-modal--open');
+    document.body.style.overflow = 'hidden';
 });
+
+
+// buttonCloseModal.addEventListener('click', function () {
+//     overlay.classList.remove('overlay-modal--open');
+//     overlay.classList.add('overlay-modal--close');
+//     document.body.style.overflow = '';
+// })
+
+overlay.addEventListener('click', function (evt) {
+  if (!modal.contains(evt.target) || evt.target == buttonCloseModal) {
+    overlay.classList.remove('overlay-modal--open');
+    overlay.classList.add('overlay-modal--close');
+    document.body.style.overflow = '';
+  }
+})
