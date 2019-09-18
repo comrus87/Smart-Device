@@ -17,7 +17,7 @@ buttonOpenModal.addEventListener('click', function () {
 });
 
 overlay.addEventListener('click', function (evt) {
-  if (!modal.contains(evt.target) || evt.target == buttonCloseModal) {
+  if (!modal.contains(evt.target) || buttonCloseModal.contains(evt.target)) {
     overlay.classList.remove('overlay-modal--open');
     overlay.classList.add('overlay-modal--close');
     document.body.style.overflow = '';
