@@ -6,12 +6,9 @@ const modal = document.querySelector('.modal-call');
 const buttonOpenModal = document.querySelector('.page-header__button');
 const buttonCloseModal = document.querySelector('.modal-call__close');
 const navList = document.querySelector('.page-footer__nav-list');
-
 const navBlock = document.querySelector('.page-footer__nav');
 const contactList = document.querySelector('.page-footer__contacts-wrap');
-
 const contactsBlock = document.querySelector('.page-footer__contacts');
-
 const buttonNavList = document.querySelectorAll('.page-footer__switch-button')[0];
 const buttonContactList = document.querySelectorAll('.page-footer__switch-button')[1];
 let nameModal = document.querySelectorAll('.modal-call__input')[0];
@@ -48,8 +45,8 @@ document.addEventListener('keydown', function (evt) {
 });
 
 function removeNoJs (block) {
-  if (block.classList.contains('list--no-js')) {
-    block.classList.remove('list--no-js');
+  if (block.classList.contains('no-js')) {
+    block.classList.remove('no-js');
   }
 }
 
@@ -57,13 +54,13 @@ removeNoJs(navList);
 removeNoJs(contactList);
 
 navBlock.addEventListener('click', function () {
-    navList.classList.toggle('footer-list--closed');
-    buttonNavList.classList.toggle('page-footer__nav--open');
+    navList.classList.toggle('list-closed');
+    buttonNavList.classList.toggle('page-footer__nav-open');
 })
 
 contactsBlock.addEventListener('click', function () {
-    contactList.classList.toggle('footer-list--closed');
-    buttonContactList.classList.toggle('page-footer__nav--open');
+    contactList.classList.toggle('list-closed');
+    buttonContactList.classList.toggle('page-footer__nav-open');
 })
 
 form.addEventListener('submit', function () {

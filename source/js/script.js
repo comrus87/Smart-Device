@@ -45,8 +45,8 @@ document.addEventListener('keydown', function (evt) {
 });
 
 function removeNoJs (block) {
-  if (block.classList.contains('list--no-js')) {
-    block.classList.remove('list--no-js');
+  if (block.classList.contains('no-js')) {
+    block.classList.remove('no-js');
   }
 }
 
@@ -54,13 +54,13 @@ removeNoJs(navList);
 removeNoJs(contactList);
 
 navBlock.addEventListener('click', function () {
-    navList.classList.toggle('footer-list--closed');
-    buttonNavList.classList.toggle('page-footer__nav--open');
+    navList.classList.toggle('list-closed');
+    buttonNavList.classList.toggle('page-footer__nav-open');
 })
 
 contactsBlock.addEventListener('click', function () {
-    contactList.classList.toggle('footer-list--closed');
-    buttonContactList.classList.toggle('page-footer__nav--open');
+    contactList.classList.toggle('list-closed');
+    buttonContactList.classList.toggle('page-footer__nav-open');
 })
 
 form.addEventListener('submit', function () {
