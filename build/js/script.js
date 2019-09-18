@@ -9,7 +9,10 @@ const navList = document.querySelector('.page-footer__nav-list');
 const contactList = document.querySelector('.page-footer__contacts-wrap');
 const buttonNavList = document.querySelectorAll('.page-footer__switch-button')[0];
 const buttonContactList = document.querySelectorAll('.page-footer__switch-button')[1];
-
+let nameModal = document.querySelectorAll('.modal-call__input')[0];
+let numberModal = document.querySelectorAll('.modal-call__input')[1];
+let messageModal = document.querySelector('.modal-call__textarea');
+const form = document.querySelector('.modal-call__form');
 
 buttonOpenModal.addEventListener('click', function () {
     overlay.classList.remove('overlay-modal--close');
@@ -35,17 +38,6 @@ document.addEventListener('keydown', function (evt) {
   }
 });
 
-
-// overlay.addEventListener('click', function (evt) {
-//   if (!modal.contains(evt.target) || buttonCloseModal.contains(evt.target)) {
-//     overlay.classList.remove('overlay-modal--open');
-//     overlay.classList.add('overlay-modal--close');
-//     document.body.style.overflow = '';
-//   }
-// })
-
-
-
 function removeNoJs (block) {
   if (block.classList.contains('list--no-js')) {
     block.classList.remove('list--no-js');
@@ -63,4 +55,10 @@ buttonNavList.addEventListener('click', function () {
 buttonContactList.addEventListener('click', function () {
     contactList.classList.toggle('footer-list--closed');
     this.classList.toggle('page-footer__nav--open');
+})
+
+form.addEventListener('submit', function () {
+  localStorage.setItem('Имя', nameModal.value);
+  localStorage.setItem('Телефон', numberModal.value);
+  localStorage.setItem('Сообщение', messageModal.value);
 })

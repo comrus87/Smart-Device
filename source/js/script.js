@@ -9,7 +9,10 @@ const navList = document.querySelector('.page-footer__nav-list');
 const contactList = document.querySelector('.page-footer__contacts-wrap');
 const buttonNavList = document.querySelectorAll('.page-footer__switch-button')[0];
 const buttonContactList = document.querySelectorAll('.page-footer__switch-button')[1];
-
+let nameModal = document.querySelectorAll('.modal-call__input')[0];
+let numberModal = document.querySelectorAll('.modal-call__input')[1];
+let messageModal = document.querySelector('.modal-call__textarea');
+const form = document.querySelector('.modal-call__form');
 
 buttonOpenModal.addEventListener('click', function () {
     overlay.classList.remove('overlay-modal--close');
@@ -52,4 +55,10 @@ buttonNavList.addEventListener('click', function () {
 buttonContactList.addEventListener('click', function () {
     contactList.classList.toggle('footer-list--closed');
     this.classList.toggle('page-footer__nav--open');
+})
+
+form.addEventListener('submit', function () {
+  localStorage.setItem('Имя', nameModal.value);
+  localStorage.setItem('Телефон', numberModal.value);
+  localStorage.setItem('Сообщение', messageModal.value);
 })
