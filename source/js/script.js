@@ -6,7 +6,9 @@ const modal = document.querySelector('.modal-call');
 const buttonOpenModal = document.querySelector('.page-header__button');
 const buttonCloseModal = document.querySelector('.modal-call__close');
 const navList = document.querySelector('.page-footer__nav-list');
+const navBlock = document.querySelector('.page-footer__nav');
 const contactList = document.querySelector('.page-footer__contacts-wrap');
+const contactsBlock = document.querySelector('.page-footer__contacts');
 const buttonNavList = document.querySelectorAll('.page-footer__switch-button')[0];
 const buttonContactList = document.querySelectorAll('.page-footer__switch-button')[1];
 let nameModal = document.querySelectorAll('.modal-call__input')[0];
@@ -51,14 +53,14 @@ function removeNoJs (block) {
 removeNoJs(navList);
 removeNoJs(contactList);
 
-buttonNavList.addEventListener('click', function () {
+navBlock.addEventListener('click', function () {
     navList.classList.toggle('footer-list--closed');
-    this.classList.toggle('page-footer__nav--open');
+    buttonNavList.classList.toggle('page-footer__nav--open');
 })
 
-buttonContactList.addEventListener('click', function () {
+contactsBlock.addEventListener('click', function () {
     contactList.classList.toggle('footer-list--closed');
-    this.classList.toggle('page-footer__nav--open');
+    buttonContactList.classList.toggle('page-footer__nav--open');
 })
 
 form.addEventListener('submit', function () {
