@@ -207,7 +207,7 @@
   .page-footer__logo-wrap {
     @include wrap-mobile;
     flex-direction: column;
-    padding: 46px 52px 54px;
+    padding: 46px 52px 48px;
   }
 
   .page-footer__nav-list {
@@ -240,7 +240,7 @@
     width: 100%;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
     display: flex;
-    padding: 23px 16px 27px 15px;
+    padding: 28px 16px 27px 15px;
     justify-content: space-between;
     flex-wrap: wrap;
   }
