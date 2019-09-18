@@ -88,8 +88,6 @@
   cursor: pointer;
   background: none;
   color: $white-color;
-  border: 1px solid $white-color;
-  border-radius: 5px;
   text-transform: uppercase;
   font-family: $roboto-condensed;
   font-weight: 700;
@@ -99,6 +97,8 @@
   padding: 15px 0 12px;
   margin: -5px 0 0 0;
   letter-spacing: 0.05em;
+  border: 1px solid $white-color;
+  border-radius: 5px;
 
   &:hover,
   &:focus {

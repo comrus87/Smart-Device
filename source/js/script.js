@@ -1,5 +1,6 @@
 'use strict';
 
+const ESC_KEYCODE = 27;
 const overlay = document.querySelector('.overlay-modal');
 const modal = document.querySelector('.modal-call');
 const buttonOpenModal = document.querySelector('.page-header__button');
@@ -16,13 +17,23 @@ buttonOpenModal.addEventListener('click', function () {
     document.body.style.overflow = 'hidden';
 });
 
+function closeModal (modal) {
+    modal.classList.remove('overlay-modal--open');
+    modal.classList.add('overlay-modal--close');
+    document.body.style.overflow = '';
+}
+
 overlay.addEventListener('click', function (evt) {
   if (!modal.contains(evt.target) || buttonCloseModal.contains(evt.target)) {
-    overlay.classList.remove('overlay-modal--open');
-    overlay.classList.add('overlay-modal--close');
-    document.body.style.overflow = '';
+    closeModal(this);
   }
 })
+
+document.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === ESC_KEYCODE) {
+    closeModal(overlay);
+  }
+});
 
 function removeNoJs (block) {
   if (block.classList.contains('list--no-js')) {
