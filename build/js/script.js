@@ -18,12 +18,16 @@ buttonOpenModal.addEventListener('click', function () {
     overlay.classList.remove('overlay-modal--close');
     overlay.classList.add('overlay-modal--open');
     document.body.style.overflow = 'hidden';
+    nameModal.focus();
 });
 
 function closeModal (modal) {
     modal.classList.remove('overlay-modal--open');
     modal.classList.add('overlay-modal--close');
     document.body.style.overflow = '';
+    nameModal.value = '';
+    numberModal.value = '';
+    messageModal.value = '';
 }
 
 overlay.addEventListener('click', function (evt) {
