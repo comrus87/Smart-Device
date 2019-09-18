@@ -195,12 +195,13 @@
           <form class="block-form__form" method="post" action="#">
 
             <input class="block-form__input block-form__name" type="text" placeholder="Имя" id="form-name" required="">
-            <label class="visually-hidden" for="form-name"></label>
+            <label class="visually-hidden" for="form-name">Имя</label>
 
             <input class="block-form__input block-form__phone" type="tel" placeholder="Телефон" id="form-phone" required="">
-            <label class="visually-hidden" for="form-phone"></label>
+            <label class="visually-hidden" for="form-phone">Телефон</label>
 
             <textarea class="block-form__textarea" id="form-textarea" placeholder="Ваш вопрос" required=""></textarea>
+            <label for="form-textarea" class="visually-hidden">Ваш вопрос</label>
 
             <button class="block-form__button form-button" type="submit">Задать вопрос</button>
 
@@ -228,12 +229,15 @@
               <ul class="page-footer__social-list">
                 <li class="page-footer__social-item">
                   <a class="page-footer__link-facebook" href="#">
+                    <span class="visually-hidden">Фейсбук</span>
                     <svg class="page-footer__item-facebook" width="27" height="27">
                       <use xlink:href="#facebook"></use>
-                  </svg></a>
+                    </svg>
+                  </a>
                 </li>
                 <li class="page-footer__social-item">
                   <a class="page-footer__link-odnoklassniki" href="#">
+                    <span class="visually-hidden">Одноклассники</span>
                     <svg class="page-footer__odnoklassniki" width="27" height="26">
                       <use xlink:href="#odnoklassniki"></use>
                     </svg>
@@ -241,6 +245,7 @@
                 </li>
                 <li class="page-footer__social-item">
                   <a class="page-footer__link-vkontakte" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
                     <svg class="page-footer__item-vkontakte" width="27" height="26">
                       <use xlink:href="#vkontakte"></use>
                     </svg>
@@ -301,13 +306,13 @@
           <p class="modal-call__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <form class="modal-call__form" method="post" action="#">
             <input class="modal-call__input" type="text" id="modal-name" placeholder="Имя" required="">
-            <label for="modal-name" class="visually-hidden"></label>
+            <label for="modal-name" class="visually-hidden">Имя</label>
 
             <input class="modal-call__input" type="tel" id="modal-phone" placeholder="Телефон" required="">
-            <label for="modal-phone" class="visually-hidden"></label>
+            <label for="modal-phone" class="visually-hidden">Телефон</label>
 
             <textarea class="modal-call__textarea" id="modal-question" placeholder="Ваш вопрос" required=""></textarea>
-            <label for="modal-question" class="visually-hidden"></label>
+            <label for="modal-question" class="visually-hidden">Ваш вопрос</label>
 
             <button class="modal-call__button form-button" type="submit">Отправить</button>
 
