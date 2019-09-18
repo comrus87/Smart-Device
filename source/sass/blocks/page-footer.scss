@@ -108,6 +108,13 @@
   align-items: center;
 }
 
+.page-footer__bottom-wrap a {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
 .copyright--rights {
   width: 15.8%;
 }
