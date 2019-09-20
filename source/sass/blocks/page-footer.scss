@@ -28,14 +28,11 @@
 
 .page-footer__nav-wrap {
   display: flex;
+  width: 70.3%;
 }
 
 .page-footer__nav {
   width: 66.3%;
-}
-
-.page-footer__nav-wrap {
-  width: 70.3%;
 }
 
 .page-footer__nav-list,
@@ -98,6 +95,7 @@
 
 .contacts-address {
   display: block;
+
   &:hover,
   &:focus {
     opacity: 0.5;

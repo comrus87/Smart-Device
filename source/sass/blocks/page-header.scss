@@ -94,7 +94,7 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  padding: 15px 0 12px;
+  padding: 14px 0;
   margin: -5px 0 0 0;
   letter-spacing: 0.05em;
   border: 1px solid $white-color;
@@ -112,8 +112,6 @@
   }
 
   .page-header__wrap {
-    max-width: 720px;
-    margin: 0 auto;
     padding: 24px 0 0 0;
   }
 
@@ -142,8 +140,6 @@
   }
 
   .page-header__wrap {
-    max-width: 290px;
-    margin: 0 auto;
     padding: 20px 0;
   }
 
