@@ -52,24 +52,19 @@
 
 .modal-call__close {
   position: absolute;
-  background-color: transparent;
+  background: url("../img/modal-close.svg") center no-repeat, transparent;
   border: none;
   width: 17px;
   height: 17px;
   outline: none;
   cursor: pointer;
   top: 20px;
-  right: 26px;
+  right: 20px;
 
   &:hover,
   &:focus {
     opacity: 0.7;
   }
-}
-
-.modal-call__image-close {
-  width: 17px;
-  height: 17px;
 }
 
 .modal-call__form {
@@ -100,19 +95,20 @@
 .modal-call__textarea {
   min-height: 104px;
   resize: none;
+  margin-bottom: 30px;
 }
 
 .modal-call__button {
   width: 100%;
-  padding: 14px 0;
+  padding: 14px 0 15px;
 }
 
 .modal-call__label-checkbox {
   max-width: 340px;
-  margin: 32px 0 0 32px;
+  margin: 33px 0 0 47px;
 
   &::before {
-    left: -32px;
+    left: -47px;
     top: 2px;
   }
 }
@@ -124,7 +120,7 @@
   width: 16px;
   height: 16px;
   border: 1px solid $white-color;
-  left: -32px;
+  left: -47px;
   top: 2px;
   background: url("../img/checked.svg") center no-repeat;
 }

@@ -1,11 +1,11 @@
 .advantages {
   background: url("../img/bg-advantages-desktop.png") no-repeat;
-  background-position: left 50% top -31px;
+  background-position: left 100% top -31px;
 }
 
 .advantages__wrap {
   @include wrap-desktop;
-  padding-top: 109px;
+  padding-top: 110px;
 }
 
 .advantages__list {
