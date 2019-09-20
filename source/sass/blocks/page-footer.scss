@@ -1,3 +1,7 @@
+.page-footer {
+  background: #fafafa;
+}
+
 .page-footer__top {
   @include wrap-desktop;
   display: flex;
@@ -89,6 +93,13 @@
   &:hover,
   &:focus {
     opacity: 0.7;
+  }
+}
+
+.page-footer__contacts-text:first-child {
+  &:hover,
+  &:focus {
+    opacity: 0.5;
   }
 }
 

@@ -131,7 +131,7 @@
             <input class="block-form__input block-form__name" type="text" placeholder="Имя" id="form-name" required>
             <label class="visually-hidden" for="form-name">Имя</label>
 
-            <input class="block-form__input block-form__phone" type="tel" placeholder="Телефон" id="form-phone" required>
+            <input class="block-form__input block-form__phone" type="tel" placeholder="Телефон" pattern="^\+7\d{3}\d{7}$" id="form-phone" required>
             <label class="visually-hidden" for="form-phone">Телефон</label>
 
             <textarea class="block-form__textarea" id="form-textarea" placeholder="Ваш вопрос" required></textarea>
@@ -242,7 +242,7 @@
             <input class="modal-call__input" type="text" id="modal-name" placeholder="Имя" required>
             <label for="modal-name" class="visually-hidden">Имя</label>
 
-            <input class="modal-call__input" type="tel" id="modal-phone" placeholder="Телефон" required>
+            <input class="modal-call__input" type="tel" id="modal-phone" placeholder="Телефон" pattern="^\+7\d{3}\d{7}$" required>
             <label for="modal-phone" class="visually-hidden">Телефон</label>
 
             <textarea class="modal-call__textarea" id="modal-question" placeholder="Ваш вопрос" required></textarea>

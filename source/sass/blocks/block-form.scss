@@ -111,6 +111,7 @@
   line-height: 16px;
   color: $white-color;
   opacity: 0.8;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -119,6 +120,11 @@
     width: 16px;
     height: 16px;
     border: 1px solid $white-color;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }
 
