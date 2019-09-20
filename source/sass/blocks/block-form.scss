@@ -45,6 +45,7 @@
   padding: 14px 16px;
   outline: none;
   margin: 0 0 40px 0;
+  border-radius: 0;
 
   &::placeholder {
     color: $white-color;
@@ -64,6 +65,7 @@
   min-height: 155px;
   resize: none;
   padding: 14px 16px;
+  border-radius: 0;
 
   &::placeholder {
     color: $white-color;
@@ -187,7 +189,7 @@
   }
 
   .block-form__button {
-    width: 280px;
+    width: calc(50% - 16px);
     padding: 15px 0 16px;
   }
 
@@ -236,5 +238,6 @@
 
   .block-form__label-checkbox {
     margin: 29px 0 0 33px;
+    max-width: 100%;
   }
 }
