@@ -15,6 +15,7 @@ let nameModal = document.querySelectorAll('.modal-call__input')[0];
 let numberModal = document.querySelectorAll('.modal-call__input')[1];
 let messageModal = document.querySelector('.modal-call__textarea');
 const form = document.querySelector('.modal-call__form');
+const formPhone = document.getElementById('form-phone');
 
 buttonOpenModal.addEventListener('click', function () {
     overlay.classList.remove('overlay-modal--close');
@@ -62,6 +63,14 @@ contactsBlock.addEventListener('click', function () {
     contactList.classList.toggle('list-closed');
     buttonContactList.classList.toggle('page-footer__nav-open');
 })
+
+const phoneModalMask = IMask(numberModal, {
+    mask: '+{7}(000)000-00-00'
+  });
+
+const phoneFormMask = IMask(formPhone, {
+    mask: '+{7}(000)000-00-00'
+  });
 
 form.addEventListener('submit', function () {
   localStorage.setItem('Имя', nameModal.value);
