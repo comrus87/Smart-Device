@@ -57,11 +57,21 @@ removeNoJs(contactList);
 navBlock.addEventListener('click', function () {
     navList.classList.toggle('list-closed');
     buttonNavList.classList.toggle('page-footer__nav-open');
+    if (!contactList.classList.contains('list-closed')) {
+      contactList.classList.add('list-closed');
+      buttonContactList.classList.remove('page-footer__nav-open');
+    }
+
 })
 
 contactsBlock.addEventListener('click', function () {
     contactList.classList.toggle('list-closed');
     buttonContactList.classList.toggle('page-footer__nav-open');
+    if (!navList.classList.contains('list-closed')) {
+      navList.classList.add('list-closed');
+      buttonNavList.classList.remove('page-footer__nav-open');
+    }
+
 })
 
 const phoneModalMask = IMask(numberModal, {
