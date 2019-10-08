@@ -71,7 +71,6 @@ contactsBlock.addEventListener('click', function () {
       navList.classList.add('list-closed');
       buttonNavList.classList.remove('page-footer__nav-open');
     }
-
 })
 
 const phoneModalMask = IMask(numberModal, {

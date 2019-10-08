@@ -130,9 +130,17 @@
   }
 }
 
+.block-form__license {
+  position: relative;
+  margin: 54px 0 0 40px;
+}
+
+.block-form__checkbox {
+  top: 0;
+}
+
 .block-form__label-checkbox {
   max-width: 230px;
-  margin: 54px 0 0 40px;
 
   &::before {
     left: -32px;
@@ -193,7 +201,7 @@
     padding: 15px 0 16px;
   }
 
-  .block-form__label-checkbox {
+  .block-form__license {
     margin: 54px 10px 0 40px;
   }
 }
@@ -236,8 +244,11 @@
     margin-top: 30px;
   }
 
-  .block-form__label-checkbox {
+  .block-form__license {
     margin: 29px 0 0 33px;
+  }
+
+  .block-form__label-checkbox {
     max-width: 100%;
   }
 }
